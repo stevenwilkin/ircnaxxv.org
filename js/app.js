@@ -30,7 +30,19 @@ function rounderCorners(){
 	$('#header-bg, #footer-bg').corners('10px'); 
 }
 
+
+/**
+ * protect email address by storing it in javascript as html entities
+ */
+function emailAddress(){
+	var html = '&#99;&#111;&#110;&#118;&#101;&#110;&#116;&#105;&#111;&#110;&#64;&#110;&#97;&#110;&#111;&#114;&#116;&#104;&#101;&#114;&#110;&#105;&#114;&#101;&#108;&#97;&#110;&#100;&#46;&#99;&#111;&#109;';
+	var email = $('<textarea>').html(html).html();
+	$('#contact a:first').html(email).attr('href', 'mailto:' + email);
+}
+
+
 $(document).ready(function(){
 	GoogleMaps.init();
 	rounderCorners();
+	emailAddress();
 });
