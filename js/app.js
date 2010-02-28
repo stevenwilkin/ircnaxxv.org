@@ -23,6 +23,11 @@ var GoogleMaps = {
 };
 
 
+function rounderCorners(){
+	$('#header-bg').corners('10px'); 
+}
+
 $(document).ready(function(){
 	GoogleMaps.init();
+	rounderCorners();
 });
