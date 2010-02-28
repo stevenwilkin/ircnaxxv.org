@@ -19,6 +19,7 @@ var GoogleMaps = {
 					<li>028 9065 1066</li>\
 				</ul>\
 				<div id="right"></div>\
+				<a href="http://maps.google.com/maps?f=d&source=s_d&saddr=Belfast&daddr=587+Upper+Newtownards+Road,+Belfast,+County+Antrim,+BT4+3LP,+United+Kingdom+(Stormont+Hotel)&geocode=FZUWQQMdg4Ol_yk7itDX_f9gSDExxcfvLBZXLg%3BFSQLQQMdzdym_ylv8EuFzgthSDGL9Tm3Trfrgg&hl=en&mra=ls&sll=54.596732,-5.888329&sspn=0.051315,0.110378&ie=UTF8&ll=54.598224,-5.885925&spn=0.051313,0.110378&z=13">Directions from city centre</a>\
 			</div>\
 		';
 		var map = new GMap2(document.getElementById('map'));
