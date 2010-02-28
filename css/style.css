@@ -70,3 +70,25 @@ a:hover {
 	margin: 5px 0 0;
 	font-size: 12px;
 }
+
+#info {
+	width: 300px;
+	position: relative;
+}
+
+#info h3 {
+	font-weight: bold;
+	margin: 0 0 5px 0;
+}
+
+#info ul {
+	float: left;
+	font-size: 12px;
+}
+
+#info #right {
+	float: right;
+	background: url(../img/stormont_hotel.jpg) no-repeat;
+	width: 100px;
+	height: 71px;
+}

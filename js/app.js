@@ -9,13 +9,25 @@ var GoogleMaps = {
 	initMap:	function(){
 		if(!GBrowserIsCompatible())
 			return;
+		var html = '\
+			<div id="info">\
+				<h3>Stormont Hotel</h3>\
+				<ul>\
+					<li>587 Upper Newtownards Road</li>\
+					<li>Belfast, County Antrim, BT4 3LP</li>\
+					<li>United Kingdom</li>\
+					<li>028 9065 1066</li>\
+				</ul>\
+				<div id="right"></div>\
+			</div>\
+		';
 		var map = new GMap2(document.getElementById('map'));
 		map.setCenter(new GLatLng(54.609979, -5.841722), 13);
 		map.addControl(new GLargeMapControl());
 		map.addControl(new GMapTypeControl());
 		var marker = new GMarker(new GLatLng(54.594979, -5.841722));
 		GEvent.addListener(marker, "click", function(){
-			marker.openInfoWindowHtml("Stormont Hotel");
+			marker.openInfoWindowHtml(html);
 		});
 		map.addOverlay(marker);
 		GEvent.trigger(marker, 'click');
