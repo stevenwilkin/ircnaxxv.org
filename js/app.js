@@ -18,6 +18,7 @@ var GoogleMaps = {
 			marker.openInfoWindowHtml("Stormont Hotel");
 		});
 		map.addOverlay(marker);
+		GEvent.trigger(marker, 'click');
 	}
 };
 
