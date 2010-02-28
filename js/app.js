@@ -23,6 +23,9 @@ var GoogleMaps = {
 };
 
 
+/**
+ * add rounded corners to text boxes
+ */
 function rounderCorners(){
 	$('#header-bg, #footer-bg').corners('10px'); 
 }
