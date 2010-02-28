@@ -9,12 +9,11 @@ var GoogleMaps = {
 	initMap:	function(){
 		if(!GBrowserIsCompatible())
 			return;
-		var latlng = new GLatLng(54.594979, -5.841722);
 		var map = new GMap2(document.getElementById('map'));
-		map.setCenter(latlng, 13);
+		map.setCenter(new GLatLng(54.609979, -5.841722), 13);
 		map.addControl(new GLargeMapControl());
 		map.addControl(new GMapTypeControl());
-		var marker = new GMarker(latlng);
+		var marker = new GMarker(new GLatLng(54.594979, -5.841722));
 		GEvent.addListener(marker, "click", function(){
 			marker.openInfoWindowHtml("Stormont Hotel");
 		});
