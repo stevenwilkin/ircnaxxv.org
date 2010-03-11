@@ -44,8 +44,8 @@ var GoogleMaps = {
 /**
  * add rounded corners to text boxes
  */
-function rounderCorners(){
-	$('#header-bg, #footer-bg').corners('10px'); 
+function roundedCorners(){
+	$('#header-bg, #footer-bg').corner('10px'); 
 }
 
 
@@ -61,6 +61,6 @@ function emailAddress(){
 
 $(document).ready(function(){
 	GoogleMaps.init();
-	rounderCorners();
+	roundedCorners();
 	emailAddress();
 });
