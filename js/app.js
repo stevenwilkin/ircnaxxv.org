@@ -63,4 +63,5 @@ $(document).ready(function(){
 	GoogleMaps.init();
 	roundedCorners();
 	emailAddress();
+	$('#flyer a').nyroModal();
 });
